@@ -12,6 +12,4 @@ TFS online (https://www.visualstudio.com/)
 
 ![alt text](https://github.com/krafty/streaks_like_github/blob/master/Docs/Images/tfs_streak.png "Screenshot")
 
-Rishikesh Parkhe
-
 streaks_like_github

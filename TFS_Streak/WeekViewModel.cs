@@ -1,20 +1,43 @@
 ﻿using System.Collections.Generic;
-namespace TFS_Streak
+using System.ComponentModel;
+using System.Windows.Data;
+using System.Linq;
+
+namespace TfsStreak
 {
-    public class WeekViewModel
+    public class WeekViewModel : ViewModelBase
     {
+        #region Private Fields
+
         private const int DaysInWeek = 7;
 
-        public IList<int> Days { get; set; }
+        #endregion Private Fields
+
+        #region Public Constructors
 
         public WeekViewModel()
         {
-            Days = new List<int>(DaysInWeek);
+            Days = new List<DayViewModel>(DaysInWeek);
         }
 
-        public void AddEntry(int index, int val)
+        #endregion Public Constructors
+
+        #region Public Properties
+
+        public IList<DayViewModel> Days { get; private set; }
+
+        public ICollectionView DaysViewModel { get { return new ListCollectionView(Days.ToList()); } }
+
+        #endregion Public Properties
+
+        #region Public Methods
+
+        public void AddEntry(int index, int value)
         {
-            Days.Insert(index, val);
+            Days.Insert(index, new DayViewModel(value));
+            RaisePropertyChanged("DaysViewModel");
         }
+
+        #endregion Public Methods
     }
 }

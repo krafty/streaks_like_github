@@ -5,6 +5,12 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFS_Streak", "TFS_Streak\TFS_Streak.csproj", "{E78BB816-B876-44D6-A590-55A1361F25DA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BDED3941-D174-460C-AA17-8CC7956F4A2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{63743F37-AF73-420E-BB92-7D25E57AF6CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{A6502DB1-9A54-4F9E-BF4A-A1DFF28B8F76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +21,16 @@ Global
 		{E78BB816-B876-44D6-A590-55A1361F25DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E78BB816-B876-44D6-A590-55A1361F25DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E78BB816-B876-44D6-A590-55A1361F25DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6502DB1-9A54-4F9E-BF4A-A1DFF28B8F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6502DB1-9A54-4F9E-BF4A-A1DFF28B8F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6502DB1-9A54-4F9E-BF4A-A1DFF28B8F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6502DB1-9A54-4F9E-BF4A-A1DFF28B8F76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E78BB816-B876-44D6-A590-55A1361F25DA} = {63743F37-AF73-420E-BB92-7D25E57AF6CA}
+		{A6502DB1-9A54-4F9E-BF4A-A1DFF28B8F76} = {BDED3941-D174-460C-AA17-8CC7956F4A2D}
 	EndGlobalSection
 EndGlobal
